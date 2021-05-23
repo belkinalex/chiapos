@@ -80,6 +80,7 @@ public:
             std::cout << "setrlimit failed" << std::endl;
         }
 #endif
+        std::cout << "Diskplotter buffer patched version!" << std::endl;
         if (k < kMinPlotSize || k > kMaxPlotSize) {
             throw InvalidValueException("Plot size k= " + std::to_string(k) + " is invalid");
         }

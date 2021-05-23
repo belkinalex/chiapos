@@ -35,8 +35,8 @@ using namespace std::chrono_literals; // for operator""min;
 #include "./util.hpp"
 #include "bitfield.hpp"
 
-constexpr uint64_t write_cache = 1024 * 1024;
-constexpr uint64_t read_ahead = 1024 * 1024;
+constexpr uint64_t write_cache = 1024 * 1024 * 1984;
+constexpr uint64_t read_ahead = 1024 * 1024 * 1984;
 
 struct Disk {
     virtual uint8_t const* Read(uint64_t begin, uint64_t length) = 0;
